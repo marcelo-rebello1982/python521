@@ -92,3 +92,14 @@ res4 = r.get(f'https://gen-net.herokuapp.com/api/users/{319}')
 res5 = res4.json()
 print(res5)
 
+
+# for k,v in endereco.items():
+#     print(f'{k} : {v}')
+# # for i in res:
+# #     print(i)
+
+
+# for k,v in endereco.items():
+#     print(f'{k} : {v}')
+# # for i in res:
+# #     print(i)
