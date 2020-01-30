@@ -1,0 +1,16 @@
+[30/01/2020 16:01:45] [ ERROR ]  root
+[<module>] [gerenciamento_logs.py, 18] mensagem de error
+[30/01/2020 16:02:05] [ ERROR ]  root
+[<module>] [gerenciamento_logs.py, 18] mensagem de error
+[30/01/2020 16:02:05] [ ERROR ]  root
+[soma] [gerenciamento_logs.py, 28] deu erro
+[30/01/2020 16:02:45] [ ERROR ]  root
+[<module>] [gerenciamento_logs.py, 18] mensagem de error
+[30/01/2020 16:02:45] [ ERROR ]  root
+[soma] [gerenciamento_logs.py, 27] deu erro
+[30/01/2020 16:42:52] [ ERROR ]  root
+[<module>] [gerenciamento_logs.py, 18] mensagem de error
+[30/01/2020 16:43:27] [ ERROR ]  root
+[<module>] [gerenciamento_logs.py, 18] mensagem de error
+[30/01/2020 16:43:27] [ CUSTOM ]  root
+[<module>] [gerenciamento_logs.py, 45] Mensagem de logs customizada 
