@@ -44,3 +44,5 @@ new_user = {
 usuario = requests.post(url + 'users?private_token=' + private_token, new_user)
 
 print(json.dumps(usuario.json(), indent=4))
+
+# http://dontpad.com/4linux
