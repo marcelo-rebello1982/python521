@@ -2,7 +2,7 @@ import os
 
 import flask
 import docker
-
+# http://127.0.0.1:5000/docker/
 
 docker_routes = flask.Blueprint(
     name='docker',
@@ -10,9 +10,13 @@ docker_routes = flask.Blueprint(
     url_prefix='/docker'
 )
 
+# BwT-JAzyLYG-xvhn9EJF
+
 
 @docker_routes.route('/')
 def index():
+    if 'logged' in flask.session and flask.session['logged']:
+        return flask.redirect(flask.url_for['ldap.index'])
     try:
         client = docker.from_env()
         container = client.containers.get('eca409ea8506')

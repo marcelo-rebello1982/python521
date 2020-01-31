@@ -1,10 +1,25 @@
 {% extends "base.html" %}
 
 {% block titulo %}
+Login
 {% endblock %}
 
 {% block titulo_card %}
+<h5 class="card-title">Login</h5>
 {% endblock %}
 
 {% block conteudo %}
+<div class="panel-body">
+    <form action="/login/" method="post">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password"></label>
+            <input type="password" name="password" id="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
 {% endblock %}

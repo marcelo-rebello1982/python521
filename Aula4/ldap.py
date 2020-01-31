@@ -6,7 +6,7 @@ import dotenv
 import hashlib
 import binascii
 
-dotenv.load_dotenv()
+dotenv.load_dotenv()  # http://dontpad.com/521-4linux/
 
 username = os.getenv('LDAP_USER')
 password = os.getenv('LDAP_PASSWORD')
@@ -54,14 +54,17 @@ print(client.entries)
 
 # alterar um usuarios
 
-changes = {
-    'cn': [(ldap3.MODIFY_REPLACE, ['marcelo'])],
-    'sn': [(ldap3.MODIFY_REPLACE, ['devops'])]
+# changes = {
+#     'cn': [(ldap3.MODIFY_REPLACE, ['marcelo'])],
+#     'sn': [(ldap3.MODIFY_REPLACE, ['devops'])]
 
-}
+# }
 
-client.modify(dn, changes)
-print(client.result)
+# client.modify(dn, changes)
+# print(client.result)
 
-client.search(dn, '(objectclass=person)', attributes=['cn', 'sn'])
-print(client.entries)
+# client.search(dn, '(objectclass=person)', attributes=['cn', 'sn'])
+# print(client.entries)
+
+md5json = hashlib.md5('senhaSuperSegura'.encode('utf-8')).digest()
+
